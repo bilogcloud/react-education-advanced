@@ -1,10 +1,10 @@
 import './App.css'
-import { Chat } from '@/day2/Chat.tsx'
+import ContextDemo from '@/day2/ContextDemo.tsx'
 
 function App() {
   return (
     <div style={{ height: '100dvh' }}>
-      <Chat />
+      <ContextDemo />
     </div>
   )
 }
