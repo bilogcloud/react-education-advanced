@@ -16,8 +16,8 @@ export function TodoList() {
     <>
       <button onClick={addToTop}>Add to top</button>
       <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
+        {todos.map((todo) => (
+          <li key={todo.id}>
             {todo.title} <input placeholder="note" />
           </li>
         ))}

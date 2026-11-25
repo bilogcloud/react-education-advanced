@@ -10,10 +10,18 @@ export function UserProfile({ userId }: { userId: string }) {
   const [error, setError] = useState<Error | null>(null)
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+    const controller = new AbortController()
+
+    fetch(`https://jsonplaceholder.typicode.com/users/${userId}`, {
+      signal: controller.signal,
+    })
       .then((res) => res.json())
       .then(setUser)
-      .catch((err) => setError(err))
+      .catch((err) => {
+        if (err.name !== 'AbortError') setError(err)
+      })
+
+    return () => controller.abort()
   }, [userId])
 
   if (error) return <p>Error: {error.message}</p>

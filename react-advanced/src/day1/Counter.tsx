@@ -4,9 +4,9 @@ export function Counter() {
   const [count, setCount] = useState(0)
 
   function addThree() {
-    setCount(count + 1)
-    setCount(count + 1)
-    setCount(count + 1)
+    setCount((previousCount) => previousCount + 1)
+    setCount((previousCount) => previousCount + 1)
+    setCount((previousCount) => previousCount + 1)
     console.log(count)
   }
 

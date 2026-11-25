@@ -42,9 +42,10 @@ export function Form() {
 
   // BUG: a new Input type is created on every render,
   // so React unmounts and remounts it and the input loses focus on each keystroke
-  function Input() {
-    return <input value={text} onChange={(e) => setText(e.target.value)} />
-  }
 
-  return <Input />
+  return <Input text={text} setText={setText} />
+}
+
+function Input({ text, setText }) {
+  return <input value={text} onChange={(e) => setText(e.target.value)} />
 }

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 
 export function Parent() {
-  const [count, setCount] = useState(0)
   console.log('Parent render')
 
   useEffect(() => {
@@ -10,10 +9,18 @@ export function Parent() {
 
   return (
     <>
-      <button onClick={() => setCount((c) => c + 1)}>{count}</button>
+      <Counter />
       <Child />
     </>
   )
+}
+
+function Counter() {
+  const [count, setCount] = useState(0)
+
+  console.log('Counter render')
+
+  return <button onClick={() => setCount((c) => c + 1)}>{count}</button>
 }
 
 function Child() {

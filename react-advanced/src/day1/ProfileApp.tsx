@@ -2,14 +2,11 @@ import { useState } from 'react'
 
 export function ProfileApp() {
   const [userId, setUserId] = useState('user-1')
-
   return (
     <div>
       <button onClick={() => setUserId('user-1')}>User 1</button>
-
       <button onClick={() => setUserId('user-2')}>User 2</button>
-
-      <ProfileForm userId={userId} />
+      <ProfileForm key={userId} userId={userId} />
     </div>
   )
 }
