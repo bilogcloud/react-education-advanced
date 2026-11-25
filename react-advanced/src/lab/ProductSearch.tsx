@@ -14,7 +14,7 @@ export function ProductSearch({ category }: { category: string }) {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?category=${category}`)
       .then((r) => r.json())
       .then(setProducts)
   }, [category])
