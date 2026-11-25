@@ -1,0 +1,220 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Ceramic Mug",
+      "price": 12,
+      "category": "Kitchen"
+    },
+    {
+      "id": "2",
+      "name": "Chef's Knife",
+      "price": 49,
+      "category": "Kitchen"
+    },
+    {
+      "id": "3",
+      "name": "Cast Iron Pan",
+      "price": 39,
+      "category": "Kitchen"
+    },
+    {
+      "id": "4",
+      "name": "Bamboo Cutting Board",
+      "price": 18,
+      "category": "Kitchen"
+    },
+    {
+      "id": "5",
+      "name": "French Press",
+      "price": 29,
+      "category": "Kitchen"
+    },
+    {
+      "id": "6",
+      "name": "Measuring Cups Set",
+      "price": 9,
+      "category": "Kitchen"
+    },
+    {
+      "id": "7",
+      "name": "Stand Mixer",
+      "price": 249,
+      "category": "Kitchen"
+    },
+    {
+      "id": "8",
+      "name": "Garden Hose",
+      "price": 35,
+      "category": "Garden"
+    },
+    {
+      "id": "9",
+      "name": "Pruning Shears",
+      "price": 22,
+      "category": "Garden"
+    },
+    {
+      "id": "10",
+      "name": "Watering Can",
+      "price": 15,
+      "category": "Garden"
+    },
+    {
+      "id": "11",
+      "name": "Raised Garden Bed",
+      "price": 89,
+      "category": "Garden"
+    },
+    {
+      "id": "12",
+      "name": "Garden Gloves",
+      "price": 8,
+      "category": "Garden"
+    },
+    {
+      "id": "13",
+      "name": "Solar Garden Lights",
+      "price": 27,
+      "category": "Garden"
+    },
+    {
+      "id": "14",
+      "name": "Compost Bin",
+      "price": 59,
+      "category": "Garden"
+    },
+    {
+      "id": "15",
+      "name": "Desk Lamp",
+      "price": 34,
+      "category": "Office"
+    },
+    {
+      "id": "16",
+      "name": "Ergonomic Chair",
+      "price": 299,
+      "category": "Office"
+    },
+    {
+      "id": "17",
+      "name": "Notebook A5",
+      "price": 6,
+      "category": "Office"
+    },
+    {
+      "id": "18",
+      "name": "Monitor Stand",
+      "price": 45,
+      "category": "Office"
+    },
+    {
+      "id": "19",
+      "name": "Wireless Keyboard",
+      "price": 59,
+      "category": "Office"
+    },
+    {
+      "id": "20",
+      "name": "Desk Organizer",
+      "price": 19,
+      "category": "Office"
+    },
+    {
+      "id": "21",
+      "name": "Office Mug",
+      "price": 14,
+      "category": "Office"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "title": "Prepare Day 2 slides",
+      "done": false
+    },
+    {
+      "id": "2",
+      "title": "Book the training room",
+      "done": false
+    },
+    {
+      "id": "3",
+      "title": "Test the TanStack Query lab",
+      "done": false
+    },
+    {
+      "id": "4",
+      "title": "Print the feedback forms",
+      "done": false
+    },
+    {
+      "id": "5",
+      "title": "Order coffee and snacks",
+      "done": false
+    },
+    {
+      "id": "6",
+      "title": "Send the starter repo link",
+      "done": false
+    },
+    {
+      "title": "todo",
+      "done": false,
+      "id": "RmaqYL7"
+    },
+    {
+      "title": "Moj novi",
+      "done": false,
+      "id": "9S7ragW"
+    },
+    {
+      "title": "dhshdhs",
+      "done": false,
+      "id": "7JiYUgv"
+    },
+    {
+      "title": "dsds",
+      "done": false,
+      "id": "GSecBK5"
+    },
+    {
+      "title": "dasda",
+      "done": false,
+      "id": "Qcey3S0"
+    },
+    {
+      "title": "dasd",
+      "done": false,
+      "id": "_vIurye"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "text": "Welcome to Day 2!"
+    },
+    {
+      "id": "2",
+      "text": "Labs are on the day2-* branches."
+    },
+    {
+      "text": "poruka",
+      "id": "pCtre7X"
+    },
+    {
+      "text": "sadsd",
+      "id": "WaH_cNU"
+    }
+  ],
+  "subscribers": [
+    {
+      "email": "luka.vukovic@bilog.hr",
+      "id": 1
+    },
+    {
+      "email": "goran.gerbus@bilog.hr",
+      "id": 2
+    }
+  ]
+}
