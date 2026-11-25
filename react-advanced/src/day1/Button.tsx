@@ -1,6 +1,6 @@
-import type { ComponentProps, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
-type ButtonProps = ComponentProps<'button'> & {
+type ButtonProps = {
   variant?: 'primary' | 'secondary'
   icon?: ReactNode
 }
@@ -8,13 +8,12 @@ type ButtonProps = ComponentProps<'button'> & {
 export function Button({
   variant = 'primary',
   icon,
-  children,
   ...rest
 }: ButtonProps) {
   return (
     <button className={`btn btn-${variant}`} {...rest}>
       {icon}
-      {children}
+      {/*{children}*/}
     </button>
   )
 }
