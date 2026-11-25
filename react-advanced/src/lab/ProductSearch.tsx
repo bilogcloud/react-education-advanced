@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 
 type Product = {
   id: string
-  name: string
+  title: string
+  body: string
 }
 
 export function ProductSearch({ category }: { category: string }) {
@@ -13,7 +14,7 @@ export function ProductSearch({ category }: { category: string }) {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    fetch(`/api/products?category=${category}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts`)
       .then((r) => r.json())
       .then(setProducts)
   }, [category])
@@ -21,7 +22,7 @@ export function ProductSearch({ category }: { category: string }) {
   useEffect(() => {
     setFiltered(
       products.filter((p) =>
-        p.name.toLowerCase().includes(query.toLowerCase()),
+        p.title.toLowerCase().includes(query.toLowerCase()),
       ),
     )
   }, [products, query])
@@ -49,7 +50,7 @@ export function ProductSearch({ category }: { category: string }) {
       </p>
       <ul>
         {filtered.map((p) => (
-          <li key={p.id}>{p.name}</li>
+          <li key={p.id}>{p.title}</li>
         ))}
       </ul>
     </div>

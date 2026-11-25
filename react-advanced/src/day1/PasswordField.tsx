@@ -2,6 +2,8 @@ import { useId } from 'react'
 
 export function PasswordField() {
   const id = useId()
+  console.log('ID', id)
+
   return (
     <form>
       <label htmlFor={id}>Password</label>

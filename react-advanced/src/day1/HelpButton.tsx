@@ -32,6 +32,7 @@ function Tooltip({ targetRect, text }: { targetRect: DOMRect; text: string }) {
   const ref = useRef<HTMLDivElement>(null)
   const [height, setHeight] = useState(0)
 
+  // triggers before UI paints
   useLayoutEffect(() => {
     setHeight(ref.current!.getBoundingClientRect().height)
   }, [text])
