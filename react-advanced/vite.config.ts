@@ -3,6 +3,7 @@ import path from 'node:path'
 
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import { configDefaults } from 'vitest/config'
 
 // import babel from '@rolldown/plugin-babel'
 
@@ -19,6 +20,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/tests/setupTests.ts',
+    exclude: ['/node_modules/**', ...configDefaults.exclude, 'e2e/**'],
   },
   resolve: {
     alias: {
