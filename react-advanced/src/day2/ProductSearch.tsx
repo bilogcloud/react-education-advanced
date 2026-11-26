@@ -1,4 +1,3 @@
-// ProductSearch.tsx — complete and runnable on its own
 import { memo, useDeferredValue, useState } from 'react'
 
 type Product = { id: string; name: string; price: number }

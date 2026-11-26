@@ -1,4 +1,3 @@
-// ContextDemo.tsx
 import {
   createContext,
   type Dispatch,
@@ -9,49 +8,51 @@ import {
 } from 'react'
 
 // ❌ WRONG: one context for the value AND the setter
-const CartContext = createContext({ count: 0, add: () => {} });
+const CartContext = createContext({ count: 0, add: () => {} })
 
 function WrongProvider({ children }: { children: ReactNode }) {
-  const [count, setCount] = useState(0);
-  const add = () => setCount(c => c + 1);
-  return <CartContext value={{ count, add }}>{children}</CartContext>;
+  const [count, setCount] = useState(0)
+  const add = () => setCount((c) => c + 1)
+  return <CartContext value={{ count, add }}>{children}</CartContext>
 }
 
 function WrongBadge() {
-  const { count } = useContext(CartContext);
-  console.log('❌ Badge rendered');
-  return <p>Items: {count}</p>;
+  const { count } = useContext(CartContext)
+  console.log('❌ Badge rendered')
+  return <p>Items: {count}</p>
 }
 
 function WrongButton() {
-  const { add } = useContext(CartContext); // only needs add, still re-renders
-  console.log('❌ Button rendered');
-  return <button onClick={add}>Add</button>;
+  const { add } = useContext(CartContext) // only needs add, still re-renders
+  console.log('❌ Button rendered')
+  return <button onClick={add}>Add</button>
 }
 
 // ✅ RIGHT: value and setter in separate contexts
-const CountContext = createContext(0);
-const SetCountContext = createContext<Dispatch<SetStateAction<number>>>(() => {});
+const CountContext = createContext(0)
+const SetCountContext = createContext<Dispatch<SetStateAction<number>>>(
+  () => {},
+)
 
 function RightProvider({ children }: { children: ReactNode }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
   return (
     <CountContext value={count}>
       <SetCountContext value={setCount}>{children}</SetCountContext>
     </CountContext>
-  );
+  )
 }
 
 function RightBadge() {
-  const count = useContext(CountContext);
-  console.log('✅ Badge rendered');
-  return <p>Items: {count}</p>;
+  const count = useContext(CountContext)
+  console.log('✅ Badge rendered')
+  return <p>Items: {count}</p>
 }
 
 function RightButton() {
-  const setCount = useContext(SetCountContext); // setCount never changes
-  console.log('✅ Button rendered');
-  return <button onClick={() => setCount(c => c + 1)}>Add</button>;
+  const setCount = useContext(SetCountContext) // setCount never changes
+  console.log('✅ Button rendered')
+  return <button onClick={() => setCount((c) => c + 1)}>Add</button>
 }
 
 export default function ContextDemo() {
@@ -69,5 +70,5 @@ export default function ContextDemo() {
         <RightButton />
       </RightProvider>
     </>
-  );
+  )
 }

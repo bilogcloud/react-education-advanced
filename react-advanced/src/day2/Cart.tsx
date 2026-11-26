@@ -1,4 +1,3 @@
-// Cart.tsx
 import { useReducer } from 'react'
 
 import { cartReducer, initialCart } from '@/day2/cartReducer.ts'

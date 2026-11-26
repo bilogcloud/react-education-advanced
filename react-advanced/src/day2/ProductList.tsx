@@ -4,8 +4,8 @@ import { api } from '@/day2/api.ts'
 import type { Product } from '@/day2/types.ts'
 
 export function ProductList({ search }: { search: string }) {
-  const { data, isPending, isError, error, isFetching } = useQuery({
-    queryKey: ['products', { search }], // the cache key: changes → new query
+  const { data, isPending, isError, error } = useQuery({
+    queryKey: ['products', search], // the cache key: changes → new query
     queryFn: () =>
       api<Product[]>(`/products?name_like=${encodeURIComponent(search)}`),
   })
@@ -15,7 +15,6 @@ export function ProductList({ search }: { search: string }) {
 
   return (
     <>
-      {isFetching && <small>Refreshing…</small>}
       <ul>
         {data.map((p) => (
           <li key={p.id}>

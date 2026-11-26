@@ -1,4 +1,3 @@
-// notifications.tsx
 import { create } from 'zustand'
 
 type Notification = { id: string; text: string; read: boolean }
@@ -11,7 +10,7 @@ type NotificationsState = {
 }
 
 export const useNotifications = create<NotificationsState>()((set) => ({
-  items: [],
+  items: [{ id: '1', text: 'Initial item', read: false }],
   panelOpen: false,
   add: (text) =>
     set((s) => ({

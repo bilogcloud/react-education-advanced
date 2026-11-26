@@ -1,10 +1,18 @@
 import './App.css'
-import ContextDemo from '@/day2/ContextDemo.tsx'
+import { useState } from 'react'
+
+import { ProductList } from '@/day2/ProductList.tsx'
 
 function App() {
+  const [search, setSearch] = useState('')
+
   return (
     <div style={{ height: '100dvh' }}>
-      <ContextDemo />
+      <input value={search} onChange={(e) => setSearch(e.target.value)} />
+      <br />
+      <br />
+      <br />
+      <ProductList search={search} />
     </div>
   )
 }
