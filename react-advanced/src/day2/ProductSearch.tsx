@@ -22,7 +22,7 @@ export default function ProductSearch() {
         placeholder="Search, e.g. 12"
       />
       <div style={{ opacity: isStale ? 0.5 : 1, transition: 'opacity 0.2s' }}>
-        <SearchResults query={deferredQuery} products={products} />
+        <SearchResults query={query} products={products} />
       </div>
     </>
   )

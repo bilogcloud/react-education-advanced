@@ -18,12 +18,13 @@ export function Tabs() {
   const [isPending, startTransition] = useTransition()
 
   function selectTab(next: typeof tab) {
-    startTransition(() => setTab(next)) // non-urgent
+    setTab(next)
+    // startTransition(() => setTab(next)) // non-urgent
   }
 
   return (
     <>
-      <nav style={{ opacity: isPending ? 0.6 : 1 }}>
+      <nav style={{ opacity: isPending ? 0.3 : 1 }}>
         <button onClick={() => selectTab('about')}>About</button>
         <button onClick={() => selectTab('posts')}>Posts (slow)</button>
         <button onClick={() => selectTab('contact')}>Contact</button>

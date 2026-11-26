@@ -141,41 +141,41 @@
     {
       "id": "3",
       "title": "Test the TanStack Query lab",
-      "done": false
+      "done": true
     },
     {
       "id": "4",
       "title": "Print the feedback forms",
-      "done": false
+      "done": true
     },
     {
       "id": "5",
       "title": "Order coffee and snacks",
-      "done": false
+      "done": true
     },
     {
       "id": "6",
       "title": "Send the starter repo link",
-      "done": false
+      "done": true
     },
     {
       "title": "todo",
-      "done": false,
+      "done": true,
       "id": "RmaqYL7"
     },
     {
       "title": "Moj novi",
-      "done": false,
+      "done": true,
       "id": "9S7ragW"
     },
     {
       "title": "dhshdhs",
-      "done": false,
+      "done": true,
       "id": "7JiYUgv"
     },
     {
       "title": "dsds",
-      "done": false,
+      "done": true,
       "id": "GSecBK5"
     },
     {
@@ -187,6 +187,41 @@
       "title": "dasd",
       "done": false,
       "id": "_vIurye"
+    },
+    {
+      "title": "Moj prvi todo",
+      "done": false,
+      "id": "x54N91z"
+    },
+    {
+      "title": "Moj drugi todo",
+      "done": false,
+      "id": "S-3MTFS"
+    },
+    {
+      "title": "Moj treci todo",
+      "done": false,
+      "id": "iLHh4pb"
+    },
+    {
+      "title": "Moj cetvrti todo",
+      "done": false,
+      "id": "JdIFzGP"
+    },
+    {
+      "title": "pero",
+      "done": false,
+      "id": "_SysiIq"
+    },
+    {
+      "title": "neki novi",
+      "done": false,
+      "id": "tY8N1Tl"
+    },
+    {
+      "title": "dasldklasnd",
+      "done": false,
+      "id": "QfjT7Ve"
     }
   ],
   "messages": [
@@ -205,6 +240,34 @@
     {
       "text": "sadsd",
       "id": "WaH_cNU"
+    },
+    {
+      "text": "poruka",
+      "id": "I-zzdnE"
+    },
+    {
+      "text": "test",
+      "id": "c0Lsow3"
+    },
+    {
+      "text": "miki",
+      "id": "olyG_4o"
+    },
+    {
+      "text": "pero",
+      "id": "YqalXxh"
+    },
+    {
+      "text": "dsajfjsdf",
+      "id": "m0daW_Q"
+    },
+    {
+      "text": "oadfiasdčfčlkds",
+      "id": "QgHkr1v"
+    },
+    {
+      "text": "pero",
+      "id": "8ZIec-m"
     }
   ],
   "subscribers": [
@@ -215,6 +278,14 @@
     {
       "email": "goran.gerbus@bilog.hr",
       "id": 2
+    },
+    {
+      "email": "luka.vukovic@bilog.hr",
+      "id": 3
+    },
+    {
+      "email": "luka.vukovic@bilog.hr",
+      "id": 4
     }
   ]
 }

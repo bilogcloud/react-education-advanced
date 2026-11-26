@@ -38,18 +38,25 @@ function ProductList({ products, onSelect }: ListProps) {
 }
 
 export function ProductsPage() {
-  const [note, setNote] = useState('')
   const [selected, setSelected] = useState<string | null>(null)
 
   return (
     <>
-      <input
-        value={note}
-        onChange={(e) => setNote(e.target.value)}
-        placeholder="Type a note"
-      />
+      <Note />
       <p>Selected: {selected ?? 'none'}</p>
       <ProductList products={products} onSelect={(id) => setSelected(id)} />
     </>
+  )
+}
+
+function Note() {
+  const [note, setNote] = useState('')
+
+  return (
+    <input
+      value={note}
+      onChange={(e) => setNote(e.target.value)}
+      placeholder="Type a note"
+    />
   )
 }

@@ -1,20 +1,9 @@
-import './App.css'
-import { useState } from 'react'
+import { Chat } from '@/day2/Chat.tsx'
 
-import { ProductList } from '@/day2/ProductList.tsx'
-
-function App() {
-  const [search, setSearch] = useState('')
-
+export default function App() {
   return (
-    <div style={{ height: '100dvh' }}>
-      <input value={search} onChange={(e) => setSearch(e.target.value)} />
-      <br />
-      <br />
-      <br />
-      <ProductList search={search} />
-    </div>
+    <>
+      <Chat />
+    </>
   )
 }
-
-export default App
