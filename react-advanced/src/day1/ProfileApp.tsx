@@ -6,7 +6,7 @@ export function ProfileApp() {
     <div>
       <button onClick={() => setUserId('user-1')}>User 1</button>
       <button onClick={() => setUserId('user-2')}>User 2</button>
-      <ProfileForm key={userId} userId={userId} />
+      <ProfileForm key={userId}  userId={userId} />
     </div>
   )
 }

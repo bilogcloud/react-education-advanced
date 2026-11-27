@@ -61,7 +61,10 @@ function Card({ withPortal }: { withPortal: boolean }) {
       <h3>{withPortal ? '✅ With portal' : '❌ Without portal'}</h3>
       <button onClick={() => setOpen(true)}>Open dialog</button>
 
-      {open && (withPortal ? createPortal(dialog, document.body) : dialog)}
+      {open &&
+        (withPortal
+          ? createPortal(dialog, document.getElementById('root'))
+          : dialog)}
     </div>
   )
 }

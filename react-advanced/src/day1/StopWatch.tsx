@@ -16,7 +16,7 @@ export function Stopwatch() {
   function stop() {
     if (intervalRef.current !== null) clearInterval(intervalRef.current)
     intervalRef.current = null
-    buttonRef.current?.focus() 
+    buttonRef.current?.focus()
   }
 
   return (
