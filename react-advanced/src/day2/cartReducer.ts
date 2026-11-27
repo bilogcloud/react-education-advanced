@@ -13,7 +13,10 @@ export type CartAction =
   | { type: 'couponApplied'; code: string }
   | { type: 'cleared' }
 
-export const initialCart: CartState = { items: [], coupon: null }
+export const initialCart: CartState = {
+  items: [{ id: 'p1', name: 'Mug', price: 12, quantity: 1 }],
+  coupon: null,
+}
 
 export function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {

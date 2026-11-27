@@ -3,6 +3,10 @@ import userEvent from '@testing-library/user-event'
 
 import { Counter } from './Counter'
 
+// beforeEach(() => {
+// before each test
+// })
+
 test('increments when the button is clicked', async () => {
   // AAA testing - Arrange-Act-Assert pattern
 

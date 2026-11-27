@@ -6,6 +6,7 @@ test('works uncontrolled', () => {
   const { result } = renderHook(() =>
     useControllableState({ defaultValue: 'a' }),
   )
+
   act(() => result.current[1]('b'))
   expect(result.current[0]).toBe('b')
 })
